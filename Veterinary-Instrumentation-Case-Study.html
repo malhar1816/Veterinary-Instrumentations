@@ -1,0 +1,2202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinary Instrumentation (Vi) - Market Expansion Strategy Case Study</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body { background: linear-gradient(135deg, #1A1A1A 0%, #2D1B2E 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(107, 78, 113, 0.3); }
+        .section-divider { background: linear-gradient(90deg, transparent, #6B4E71, transparent); height: 1px; }
+        .gradient-text { background: linear-gradient(135deg, #6B4E71, #9B7EBD); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: #6B4E71; transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+        .metric-card { background: linear-gradient(135deg, #2D1B2E, #1A1A1A); border: 1px solid #6B4E71; }
+        .strategy-card { background: linear-gradient(135deg, #1A1A1A, #2D1B2E); }
+        .competitive-table { background: #1A1A1A; border: 1px solid #6B4E71; }
+        .analysis-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .roadmap-step { position: relative; }
+        .roadmap-step::before { content: ''; position: absolute; left: 20px; top: 60px; width: 2px; height: 100%; background: #6B4E71; }
+        .roadmap-step:last-child::before { display: none; }
+        .kpi-gauge { background: conic-gradient(#6B4E71 0% 75%, #2D1B2E 75% 100%); }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6B4E71',
+                        secondary: '#9B7EBD'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-white min-h-screen">
+    <!-- Header -->
+    <header class="w-full bg-black/50 backdrop-blur-sm border-b border-primary/20 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="font-['Pacifico'] text-2xl text-primary"> <div class="logo text-2xl text-black"><img src="Provet-Vi-news-logo.png" height="60" width="100" /></div></div>
+                    <div class="text-sm text-gray-300">Case Study</div>
+                </div>
+                <nav class="flex space-x-8">
+                    <a href="#executive" class="nav-link text-sm text-gray-300 hover:text-primary">Executive Summary</a>
+                    <a href="#competitive" class="nav-link text-sm text-gray-300 hover:text-primary">Competitive Analysis</a>
+                    <a href="#market" class="nav-link text-sm text-gray-300 hover:text-primary">Market Analysis</a>
+                    <a href="#sales" class="nav-link text-sm text-gray-300 hover:text-primary">Sales Analysis</a>
+                    <a href="#strategy" class="nav-link text-sm text-gray-300 hover:text-primary">Strategy</a>
+                    <a href="#expansion" class="nav-link text-sm text-gray-300 hover:text-primary">International Expansion</a>
+                    <a href="#compliance" class="nav-link text-sm text-gray-300 hover:text-primary">Compliance</a>
+                    <a href="#roadmap" class="nav-link text-sm text-gray-300 hover:text-primary">Roadmap</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="w-full py-20 px-6" style="background-image: url('https://readdy.ai/api/search-image?query=Modern%20veterinary%20surgical%20instruments%20and%20medical%20equipment%20arranged%20on%20a%20clean%20white%20surface%20with%20soft%20professional%20lighting%2C%20high-tech%20medical%20devices%2C%20surgical%20tools%2C%20orthopedic%20implants%2C%20professional%20healthcare%20environment%2C%20minimalist%20composition%2C%20gradient%20background%20from%20deep%20purple%20to%20black%2C%20medical%20innovation%20theme&width=1920&height=600&seq=hero001&orientation=landscape'); background-size: cover; background-position: center;">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-black/70 backdrop-blur-sm rounded-2xl p-12 max-w-4xl">
+                <h1 class="text-5xl font-bold mb-6 gradient-text">Veterinary Instrumentation (Vi)</h1>
+                <h2 class="text-2xl text-gray-300 mb-8">Market Expansion Strategy Case Study</h2>
+                <p class="text-lg text-gray-400 mb-8 leading-relaxed">A comprehensive analysis of Vi's strategic positioning in the global veterinary surgical instruments market, examining competitive dynamics, market opportunities, and expansion strategies for sustained growth across 65+ countries.</p>
+                <div class="flex space-x-4">
+                    <button class="bg-primary hover:bg-secondary px-8 py-3 !rounded-button text-white font-medium whitespace-nowrap"></button>
+                    <button class="border border-primary hover:bg-primary/10 px-8 py-3 !rounded-button text-primary font-medium whitespace-nowrap"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Summary -->
+    <section id="executive" class="w-full py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Executive Summary</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="metric-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Company Profile</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Founded</span>
+                            <span class="text-white font-medium">1986</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Headquarters</span>
+                            <span class="text-white font-medium">Sheffield, UK</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Parent Company</span>
+                            <span class="text-white font-medium">Henry Schein Inc.</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Global Presence</span>
+                            <span class="text-white font-medium">65+ Countries</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Product Range</span>
+                            <span class="text-white font-medium">5,000+ Products</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metric-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Key Performance Indicators</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Annual Implants</span>
+                                <span class="text-white font-medium">19,000+</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Team Experience</span>
+                                <span class="text-white font-medium">90+ Years</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-secondary h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Market Coverage</span>
+                                <span class="text-white font-medium">Global</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 78%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="strategy-card rounded-xl p-6 text-center card-hover">
+                    <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-stethoscope-line text-2xl text-primary"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Surgical Excellence</h4>
+                    <p class="text-gray-400">Specialized in TPLO, cruciate repair, and spinal surgery instruments</p>
+                </div>
+                <div class="strategy-card rounded-xl p-6 text-center card-hover">
+                    <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-graduation-cap-line text-2xl text-primary"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">CPD Training</h4>
+                    <p class="text-gray-400">Certified professional development programs and webinars</p>
+                </div>
+                <div class="strategy-card rounded-xl p-6 text-center card-hover">
+                    <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-global-line text-2xl text-primary"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Global Reach</h4>
+                    <p class="text-gray-400">Serving veterinary professionals across 65+ countries worldwide</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitive Analysis -->
+    <section id="competitive" class="w-full py-16 px-6 bg-black/30">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Competitive Analysis</h2>
+            
+            <div class="competitive-table rounded-xl overflow-hidden mb-12">
+                <table class="w-full">
+                    <thead class="bg-primary/20">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-sm font-medium text-gray-300">Criteria</th>
+                            <th class="px-6 py-4 text-center text-sm font-medium text-primary">Vi</th>
+                            <th class="px-6 py-4 text-center text-sm font-medium text-gray-300">Orthomed</th>
+                            <th class="px-6 py-4 text-center text-sm font-medium text-gray-300">Kruuse</th>
+                            <th class="px-6 py-4 text-center text-sm font-medium text-gray-300">Covetrus</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-700">
+                        <tr>
+                            <td class="px-6 py-4 text-sm text-gray-300">Market Presence</td>
+                            <td class="px-6 py-4 text-center">
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-gray-500 h-2 rounded-full" style="width: 70%"></div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-gray-500 h-2 rounded-full" style="width: 65%"></div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-gray-500 h-2 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm text-gray-300">Product Range</td>
+                            <td class="px-6 py-4 text-center text-primary font-medium">5,000+</td>
+                            <td class="px-6 py-4 text-center text-gray-400">3,200+</td>
+                            <td class="px-6 py-4 text-center text-gray-400">2,800+</td>
+                            <td class="px-6 py-4 text-center text-gray-400">4,500+</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm text-gray-300">Training Programs</td>
+                            <td class="px-6 py-4 text-center">
+                                <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs">Excellent</span>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <span class="bg-gray-700 text-gray-400 px-3 py-1 rounded-full text-xs">Good</span>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <span class="bg-gray-700 text-gray-400 px-3 py-1 rounded-full text-xs">Limited</span>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <span class="bg-gray-700 text-gray-400 px-3 py-1 rounded-full text-xs">Good</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm text-gray-300">Customer Support</td>
+                            <td class="px-6 py-4 text-center">
+                                <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs">24/7</span>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <span class="bg-gray-700 text-gray-400 px-3 py-1 rounded-full text-xs">Business Hours</span>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <span class="bg-gray-700 text-gray-400 px-3 py-1 rounded-full text-xs">Limited</span>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <span class="bg-gray-700 text-gray-400 px-3 py-1 rounded-full text-xs">Extended</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm text-gray-300">Innovation Focus</td>
+                            <td class="px-6 py-4 text-center">
+                                <div class="flex justify-center">
+                                    <i class="ri-star-fill text-primary"></i>
+                                    <i class="ri-star-fill text-primary"></i>
+                                    <i class="ri-star-fill text-primary"></i>
+                                    <i class="ri-star-fill text-primary"></i>
+                                    <i class="ri-star-fill text-primary"></i>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <div class="flex justify-center">
+                                    <i class="ri-star-fill text-gray-400"></i>
+                                    <i class="ri-star-fill text-gray-400"></i>
+                                    <i class="ri-star-fill text-gray-400"></i>
+                                    <i class="ri-star-fill text-gray-400"></i>
+                                    <i class="ri-star-line text-gray-600"></i>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <div class="flex justify-center">
+                                    <i class="ri-star-fill text-gray-400"></i>
+                                    <i class="ri-star-fill text-gray-400"></i>
+                                    <i class="ri-star-fill text-gray-400"></i>
+                                    <i class="ri-star-line text-gray-600"></i>
+                                    <i class="ri-star-line text-gray-600"></i>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <div class="flex justify-center">
+                                    <i class="ri-star-fill text-gray-400"></i>
+                                    <i class="ri-star-fill text-gray-400"></i>
+                                    <i class="ri-star-fill text-gray-400"></i>
+                                    <i class="ri-star-fill text-gray-400"></i>
+                                    <i class="ri-star-line text-gray-600"></i>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="analysis-grid">
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">BCG Matrix Analysis</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Stars</span>
+                            <span class="text-white">TPLO Systems</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Cash Cows</span>
+                            <span class="text-white">Surgical Instruments</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Question Marks</span>
+                            <span class="text-white">Digital Solutions</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Dogs</span>
+                            <span class="text-white">Legacy Products</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Core Competencies</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-primary rounded-full"></div>
+                            <span class="text-gray-300">UK-based design expertise</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                            <span class="text-gray-300">Clinical training programs</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-primary rounded-full"></div>
+                            <span class="text-gray-300">Practice support team</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                            <span class="text-gray-300">Custom kit solutions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Strategic Positioning</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Quality Leadership</span>
+                                <span class="text-white">92%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Innovation Index</span>
+                                <span class="text-white">88%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-secondary h-2 rounded-full" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Market Share</span>
+                                <span class="text-white">76%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 76%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Analysis -->
+    <section id="market" class="w-full py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Market Analysis</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">PESTLE Analysis</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-bold text-white mb-2">Political</h4>
+                            <p class="text-gray-400 text-sm">Brexit impact on EU trade, regulatory harmonization, government healthcare policies</p>
+                        </div>
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h4 class="font-bold text-white mb-2">Economic</h4>
+                            <p class="text-gray-400 text-sm">£2.8B UK veterinary market, 6.2% annual growth, increased pet ownership spending</p>
+                        </div>
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-bold text-white mb-2">Social</h4>
+                            <p class="text-gray-400 text-sm">Rising pet humanization trend, aging pet population, preventive care focus</p>
+                        </div>
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h4 class="font-bold text-white mb-2">Technological</h4>
+                            <p class="text-gray-400 text-sm">Minimally invasive surgery, digital imaging, AI-assisted diagnostics</p>
+                        </div>
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-bold text-white mb-2">Legal</h4>
+                            <p class="text-gray-400 text-sm">EU MDR compliance, UK medical device regulations, quality standards</p>
+                        </div>
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h4 class="font-bold text-white mb-2">Environmental</h4>
+                            <p class="text-gray-400 text-sm">Sustainable packaging, eco-friendly materials, carbon footprint reduction</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Porter's Five Forces</h3>
+                    <div class="space-y-6">
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-primary font-bold">Medium</span>
+                            </div>
+                            <p class="text-sm text-gray-400">Competitive Rivalry</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                                    <span class="text-secondary font-bold text-sm">Low</span>
+                                </div>
+                                <p class="text-xs text-gray-400">Supplier Power</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                                    <span class="text-primary font-bold text-sm">High</span>
+                                </div>
+                                <p class="text-xs text-gray-400">Buyer Power</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                                    <span class="text-secondary font-bold text-sm">Low</span>
+                                </div>
+                                <p class="text-xs text-gray-400">New Entrants</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                                    <span class="text-primary font-bold text-sm">Med</span>
+                                </div>
+                                <p class="text-xs text-gray-400">Substitutes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Market Segmentation</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Small Animal</span>
+                            <span class="text-white">68%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Equine</span>
+                            <span class="text-white">22%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Large Animal</span>
+                            <span class="text-white">10%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Geographic Distribution</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Europe</span>
+                            <span class="text-white">45%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">North America</span>
+                            <span class="text-white">28%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Asia-Pacific</span>
+                            <span class="text-white">18%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Others</span>
+                            <span class="text-white">9%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Practice Size Analysis</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Large Practices</span>
+                            <span class="text-white">35%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Medium Practices</span>
+                            <span class="text-white">42%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Small Practices</span>
+                            <span class="text-white">23%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="strategy-card rounded-xl p-8 card-hover">
+                <h3 class="text-2xl font-bold mb-6 text-primary">McKinsey 7S Framework Analysis</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-white">Hard Elements</h4>
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                <span class="text-gray-300 text-sm">Strategy: Market leadership in surgical instruments</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                <span class="text-gray-300 text-sm">Structure: Functional organization with regional focus</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                <span class="text-gray-300 text-sm">Systems: Integrated ERP and CRM platforms</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-white">Soft Elements</h4>
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                <span class="text-gray-300 text-sm">Shared Values: Quality, innovation, customer focus</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                <span class="text-gray-300 text-sm">Style: Collaborative leadership approach</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                <span class="text-gray-300 text-sm">Staff: 90+ years combined veterinary experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-white">Core Capabilities</h4>
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                <span class="text-gray-300 text-sm">Skills: Clinical expertise and technical innovation</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                <span class="text-gray-300 text-sm">Training: CPD-certified education programs</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                <span class="text-gray-300 text-sm">Support: 24/7 practice support services</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sales Analysis & Training -->
+    <section id="sales" class="w-full py-16 px-6 bg-black/30">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Sales Analysis & Training</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Sales Performance Dashboard</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Surgical Instruments</span>
+                                <span class="text-white">£12.5M</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="bg-primary h-3 rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Orthopedic Implants</span>
+                                <span class="text-white">£8.2M</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="bg-secondary h-3 rounded-full" style="width: 42%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Custom Kits</span>
+                                <span class="text-white">£4.8M</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="bg-primary h-3 rounded-full" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Training Services</span>
+                                <span class="text-white">£2.1M</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="bg-secondary h-3 rounded-full" style="width: 11%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Regional Sales Breakdown</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-4 h-4 bg-primary rounded-full"></div>
+                                <span class="text-gray-300">UK & Ireland</span>
+                            </div>
+                            <span class="text-white font-medium">£11.2M</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-4 h-4 bg-secondary rounded-full"></div>
+                                <span class="text-gray-300">Continental Europe</span>
+                            </div>
+                            <span class="text-white font-medium">£8.7M</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-4 h-4 bg-primary rounded-full"></div>
+                                <span class="text-gray-300">North America</span>
+                            </div>
+                            <span class="text-white font-medium">£5.4M</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-4 h-4 bg-secondary rounded-full"></div>
+                                <span class="text-gray-300">Asia-Pacific</span>
+                            </div>
+                            <span class="text-white font-medium">£2.3M</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Training Programs</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">CPD Courses</span>
+                            <span class="text-white">24</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Webinars</span>
+                            <span class="text-white">156</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Participants</span>
+                            <span class="text-white">3,240</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Satisfaction</span>
+                            <span class="text-white">94%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Purchase Process</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
+                                <span class="text-primary text-sm font-bold">1</span>
+                            </div>
+                            <span class="text-gray-300 text-sm">Initial Consultation</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center">
+                                <span class="text-secondary text-sm font-bold">2</span>
+                            </div>
+                            <span class="text-gray-300 text-sm">Product Demonstration</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
+                                <span class="text-primary text-sm font-bold">3</span>
+                            </div>
+                            <span class="text-gray-300 text-sm">Training & Support</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center">
+                                <span class="text-secondary text-sm font-bold">4</span>
+                            </div>
+                            <span class="text-gray-300 text-sm">Order & Delivery</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Customer Metrics</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Retention Rate</span>
+                                <span class="text-white">89%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 89%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Avg Order Value</span>
+                                <span class="text-white">£2,450</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-secondary h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">NPS Score</span>
+                                <span class="text-white">72</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 72%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="strategy-card rounded-xl p-8 card-hover">
+                <h3 class="text-2xl font-bold mb-6 text-primary">Clinical Training Effectiveness</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-primary">94%</span>
+                        </div>
+                        <h4 class="font-bold text-white mb-2">Satisfaction Rate</h4>
+                        <p class="text-gray-400 text-sm">Average training satisfaction score</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-secondary">3,240</span>
+                        </div>
+                        <h4 class="font-bold text-white mb-2">Participants</h4>
+                        <p class="text-gray-400 text-sm">Total training participants</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-primary">156</span>
+                        </div>
+                        <h4 class="font-bold text-white mb-2">Webinars</h4>
+                        <p class="text-gray-400 text-sm">Online training sessions</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-secondary">24</span>
+                        </div>
+                        <h4 class="font-bold text-white mb-2">CPD Courses</h4>
+                        <p class="text-gray-400 text-sm">Certified professional development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategy Components -->
+    <section id="strategy" class="w-full py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Strategy Components</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Growth Strategy Matrix</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-primary/10 border border-primary/30 rounded-lg p-4">
+                            <h4 class="font-bold text-primary mb-2">Market Penetration</h4>
+                            <p class="text-gray-400 text-sm">Increase market share in existing markets through competitive pricing and enhanced service</p>
+                        </div>
+                        <div class="bg-secondary/10 border border-secondary/30 rounded-lg p-4">
+                            <h4 class="font-bold text-secondary mb-2">Product Development</h4>
+                            <p class="text-gray-400 text-sm">Develop new surgical instruments and digital solutions for existing customers</p>
+                        </div>
+                        <div class="bg-secondary/10 border border-secondary/30 rounded-lg p-4">
+                            <h4 class="font-bold text-secondary mb-2">Market Development</h4>
+                            <p class="text-gray-400 text-sm">Expand into new geographic markets and customer segments</p>
+                        </div>
+                        <div class="bg-primary/10 border border-primary/30 rounded-lg p-4">
+                            <h4 class="font-bold text-primary mb-2">Diversification</h4>
+                            <p class="text-gray-400 text-sm">Enter related markets such as veterinary diagnostics and digital health</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Value Chain Analysis</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-bold text-white mb-2">Primary Activities</h4>
+                            <ul class="text-gray-400 text-sm space-y-1">
+                                <li>• Inbound logistics: Raw material sourcing</li>
+                                <li>• Operations: Manufacturing and quality control</li>
+                                <li>• Outbound logistics: Distribution network</li>
+                                <li>• Marketing & Sales: Direct sales force</li>
+                                <li>• Service: Training and support</li>
+                            </ul>
+                        </div>
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h4 class="font-bold text-white mb-2">Support Activities</h4>
+                            <ul class="text-gray-400 text-sm space-y-1">
+                                <li>• Technology development: R&D innovation</li>
+                                <li>• Human resources: Skilled workforce</li>
+                                <li>• Infrastructure: IT systems and facilities</li>
+                                <li>• Procurement: Supplier relationships</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Resource-Based View</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-primary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Valuable: Clinical expertise</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Rare: UK design heritage</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-primary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Inimitable: Training programs</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Organized: Henry Schein support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Strategic Capabilities</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Innovation</span>
+                                <span class="text-white">92%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Quality</span>
+                                <span class="text-white">96%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-secondary h-2 rounded-full" style="width: 96%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Service</span>
+                                <span class="text-white">89%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 89%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Risk Management</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Regulatory Risk</span>
+                            <span class="bg-yellow-600/20 text-yellow-400 px-2 py-1 rounded text-xs">Medium</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Market Risk</span>
+                            <span class="bg-green-600/20 text-green-400 px-2 py-1 rounded text-xs">Low</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Competitive Risk</span>
+                            <span class="bg-yellow-600/20 text-yellow-400 px-2 py-1 rounded text-xs">Medium</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Technology Risk</span>
+                            <span class="bg-green-600/20 text-green-400 px-2 py-1 rounded text-xs">Low</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="strategy-card rounded-xl p-8 card-hover">
+                <h3 class="text-2xl font-bold mb-6 text-primary">Balanced Scorecard Framework</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="ri-line-chart-line text-2xl text-primary"></i>
+                        </div>
+                        <h4 class="font-bold text-white mb-3">Financial</h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Revenue Growth</span>
+                                <span class="text-white">12%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Profit Margin</span>
+                                <span class="text-white">18%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">ROI</span>
+                                <span class="text-white">24%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="ri-customer-service-line text-2xl text-secondary"></i>
+                        </div>
+                        <h4 class="font-bold text-white mb-3">Customer</h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Satisfaction</span>
+                                <span class="text-white">94%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Retention</span>
+                                <span class="text-white">89%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">NPS</span>
+                                <span class="text-white">72</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="ri-settings-line text-2xl text-primary"></i>
+                        </div>
+                        <h4 class="font-bold text-white mb-3">Internal Process</h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Quality Rate</span>
+                                <span class="text-white">99.2%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Delivery Time</span>
+                                <span class="text-white">2.1 days</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Innovation</span>
+                                <span class="text-white">15 new</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="ri-team-line text-2xl text-secondary"></i>
+                        </div>
+                        <h4 class="font-bold text-white mb-3">Learning & Growth</h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Training Hours</span>
+                                <span class="text-white">240</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Employee Satisfaction</span>
+                                <span class="text-white">91%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Skills Development</span>
+                                <span class="text-white">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- International Expansion Strategy -->
+    <section id="expansion" class="w-full py-16 px-6 bg-black/30">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">International Expansion Strategy</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Market Entry Modes</h3>
+                    <div class="space-y-6">
+                        <div class="border border-primary/30 rounded-lg p-4">
+                            <h4 class="font-bold text-primary mb-2">Direct Investment</h4>
+                            <p class="text-gray-400 text-sm mb-3">Establish subsidiaries in key markets</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">Germany</span>
+                                <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">France</span>
+                                <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">USA</span>
+                            </div>
+                        </div>
+                        <div class="border border-secondary/30 rounded-lg p-4">
+                            <h4 class="font-bold text-secondary mb-2">Strategic Partnerships</h4>
+                            <p class="text-gray-400 text-sm mb-3">Joint ventures with local distributors</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-secondary/20 text-secondary px-2 py-1 rounded text-xs">Australia</span>
+                                <span class="bg-secondary/20 text-secondary px-2 py-1 rounded text-xs">Japan</span>
+                                <span class="bg-secondary/20 text-secondary px-2 py-1 rounded text-xs">Brazil</span>
+                            </div>
+                        </div>
+                        <div class="border border-primary/30 rounded-lg p-4">
+                            <h4 class="font-bold text-primary mb-2">Licensing</h4>
+                            <p class="text-gray-400 text-sm mb-3">License technology to local manufacturers</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">India</span>
+                                <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">China</span>
+                                <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">Mexico</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">CAGE Distance Framework</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-bold text-white mb-2">Cultural Distance</h4>
+                            <p class="text-gray-400 text-sm">Language barriers, veterinary practice differences, professional standards</p>
+                        </div>
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h4 class="font-bold text-white mb-2">Administrative Distance</h4>
+                            <p class="text-gray-400 text-sm">Regulatory frameworks, medical device approvals, trade agreements</p>
+                        </div>
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-bold text-white mb-2">Geographic Distance</h4>
+                            <p class="text-gray-400 text-sm">Physical distance, time zones, logistics costs, distribution networks</p>
+                        </div>
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h4 class="font-bold text-white mb-2">Economic Distance</h4>
+                            <p class="text-gray-400 text-sm">GDP differences, currency fluctuations, purchasing power, market maturity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Market Prioritization</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Tier 1 Markets</span>
+                            <span class="bg-green-600/20 text-green-400 px-2 py-1 rounded text-xs">High Priority</span>
+                        </div>
+                        <div class="text-sm text-gray-300 ml-4">
+                            <div>• Germany, France, Netherlands</div>
+                            <div>• USA, Canada</div>
+                            <div>• Australia, New Zealand</div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Tier 2 Markets</span>
+                            <span class="bg-yellow-600/20 text-yellow-400 px-2 py-1 rounded text-xs">Medium Priority</span>
+                        </div>
+                        <div class="text-sm text-gray-300 ml-4">
+                            <div>• Japan, South Korea</div>
+                            <div>• Brazil, Argentina</div>
+                            <div>• South Africa</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Product Adaptation</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-primary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Regulatory compliance modifications</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Local language documentation</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-primary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Cultural training preferences</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Regional veterinary practices</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-primary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Local supplier integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Distribution Strategy</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Direct Sales</span>
+                                <span class="text-white">45%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Distributors</span>
+                                <span class="text-white">35%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-secondary h-2 rounded-full" style="width: 35%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Online</span>
+                                <span class="text-white">20%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 20%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="strategy-card rounded-xl p-8 card-hover">
+                <h3 class="text-2xl font-bold mb-6 text-primary">Resource Allocation Plan</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-primary">£8M</span>
+                        </div>
+                        <h4 class="font-bold text-white mb-2">Investment Budget</h4>
+                        <p class="text-gray-400 text-sm">Total expansion investment over 3 years</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-secondary">45</span>
+                        </div>
+                        <h4 class="font-bold text-white mb-2">New Hires</h4>
+                        <p class="text-gray-400 text-sm">Additional staff for international operations</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-primary">12</span>
+                        </div>
+                        <h4 class="font-bold text-white mb-2">New Markets</h4>
+                        <p class="text-gray-400 text-sm">Target markets for expansion</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-secondary">36</span>
+                        </div>
+                        <h4 class="font-bold text-white mb-2">Months</h4>
+                        <p class="text-gray-400 text-sm">Timeline for full implementation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regulatory Compliance Strategy -->
+    <section id="compliance" class="w-full py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Regulatory Compliance Strategy</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">EU MDR Compliance</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Technical Documentation</span>
+                            <span class="bg-green-600/20 text-green-400 px-3 py-1 rounded-full text-xs">Complete</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Clinical Evaluation</span>
+                            <span class="bg-green-600/20 text-green-400 px-3 py-1 rounded-full text-xs">Complete</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Risk Management</span>
+                            <span class="bg-green-600/20 text-green-400 px-3 py-1 rounded-full text-xs">Complete</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Post-Market Surveillance</span>
+                            <span class="bg-yellow-600/20 text-yellow-400 px-3 py-1 rounded-full text-xs">In Progress</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Notified Body Assessment</span>
+                            <span class="bg-yellow-600/20 text-yellow-400 px-3 py-1 rounded-full text-xs">Pending</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">UK Medical Device Regulations</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">UKCA Marking</span>
+                            <span class="bg-green-600/20 text-green-400 px-3 py-1 rounded-full text-xs">Complete</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Approved Body Review</span>
+                            <span class="bg-green-600/20 text-green-400 px-3 py-1 rounded-full text-xs">Complete</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">MHRA Registration</span>
+                            <span class="bg-green-600/20 text-green-400 px-3 py-1 rounded-full text-xs">Complete</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Quality Management</span>
+                            <span class="bg-green-600/20 text-green-400 px-3 py-1 rounded-full text-xs">ISO 13485</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Vigilance System</span>
+                            <span class="bg-green-600/20 text-green-400 px-3 py-1 rounded-full text-xs">Active</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Quality Management System</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-primary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">ISO 13485:2016 certified</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Risk-based approach</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-primary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Continuous improvement</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Document control</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-primary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Corrective actions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Clinical Evaluation Process</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
+                                <span class="text-primary text-sm font-bold">1</span>
+                            </div>
+                            <span class="text-gray-300 text-sm">Literature review</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center">
+                                <span class="text-secondary text-sm font-bold">2</span>
+                            </div>
+                            <span class="text-gray-300 text-sm">Clinical data analysis</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
+                                <span class="text-primary text-sm font-bold">3</span>
+                            </div>
+                            <span class="text-gray-300 text-sm">Safety assessment</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center">
+                                <span class="text-secondary text-sm font-bold">4</span>
+                            </div>
+                            <span class="text-gray-300 text-sm">Benefit-risk analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Audit Framework</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Internal Audits</span>
+                                <span class="text-white">Quarterly</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">External Audits</span>
+                                <span class="text-white">Annual</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-secondary h-2 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Compliance Rate</span>
+                                <span class="text-white">98.5%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 98.5%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="strategy-card rounded-xl p-8 card-hover">
+                <h3 class="text-2xl font-bold mb-6 text-primary">Regional Regulation Comparison</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b border-gray-700">
+                                <th class="text-left py-3 px-4 text-gray-400">Requirement</th>
+                                <th class="text-center py-3 px-4 text-primary">EU MDR</th>
+                                <th class="text-center py-3 px-4 text-primary">UK MHRA</th>
+                                <th class="text-center py-3 px-4 text-primary">FDA (USA)</th>
+                                <th class="text-center py-3 px-4 text-primary">TGA (Australia)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-700">
+                            <tr>
+                                <td class="py-3 px-4 text-gray-300">Classification</td>
+                                <td class="py-3 px-4 text-center text-white">Class I/IIa</td>
+                                <td class="py-3 px-4 text-center text-white">Class I/IIa</td>
+                                <td class="py-3 px-4 text-center text-white">Class I/II</td>
+                                <td class="py-3 px-4 text-center text-white">Class I/IIa</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-300">Notified Body</td>
+                                <td class="py-3 px-4 text-center text-green-400">Required</td>
+                                <td class="py-3 px-4 text-center text-green-400">Required</td>
+                                <td class="py-3 px-4 text-center text-yellow-400">FDA Review</td>
+                                <td class="py-3 px-4 text-center text-green-400">Required</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-300">Clinical Data</td>
+                                <td class="py-3 px-4 text-center text-green-400">Mandatory</td>
+                                <td class="py-3 px-4 text-center text-green-400">Mandatory</td>
+                                <td class="py-3 px-4 text-center text-green-400">Mandatory</td>
+                                <td class="py-3 px-4 text-center text-green-400">Mandatory</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-300">QMS Standard</td>
+                                <td class="py-3 px-4 text-center text-white">ISO 13485</td>
+                                <td class="py-3 px-4 text-center text-white">ISO 13485</td>
+                                <td class="py-3 px-4 text-center text-white">21 CFR 820</td>
+                                <td class="py-3 px-4 text-center text-white">ISO 13485</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Range Overview -->
+    <section class="w-full py-16 px-6 bg-black/30">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Product Range Overview</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <div class="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-4">
+                        <i class="ri-surgical-mask-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-primary">Surgical Instruments</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Soft Tissue Tools</span>
+                            <span class="text-white">1,200+</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Forceps & Scissors</span>
+                            <span class="text-white">800+</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Retractors</span>
+                            <span class="text-white">300+</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Needle Holders</span>
+                            <span class="text-white">150+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <div class="w-16 h-16 bg-secondary/20 rounded-xl flex items-center justify-center mb-4">
+                        <i class="ri-bone-line text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-secondary">Orthopedic Implants</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">TPLO Systems</span>
+                            <span class="text-white">450+</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Cruciate Repair</span>
+                            <span class="text-white">320+</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Spinal Surgery</span>
+                            <span class="text-white">180+</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Fracture Repair</span>
+                            <span class="text-white">600+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <div class="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-4">
+                        <i class="ri-briefcase-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-primary">Custom Kits</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Procedure Kits</span>
+                            <span class="text-white">200+</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Specialty Sets</span>
+                            <span class="text-white">150+</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Training Kits</span>
+                            <span class="text-white">80+</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Emergency Sets</span>
+                            <span class="text-white">50+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Innovation Pipeline</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-bold text-white mb-2">Research & Development</h4>
+                            <p class="text-gray-400 text-sm">Next-generation minimally invasive surgical instruments</p>
+                        </div>
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h4 class="font-bold text-white mb-2">Digital Integration</h4>
+                            <p class="text-gray-400 text-sm">Smart instruments with IoT connectivity and data analytics</p>
+                        </div>
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-bold text-white mb-2">Material Science</h4>
+                            <p class="text-gray-400 text-sm">Advanced biocompatible materials for improved outcomes</p>
+                        </div>
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h4 class="font-bold text-white mb-2">Sustainability</h4>
+                            <p class="text-gray-400 text-sm">Eco-friendly packaging and recyclable instrument components</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Product Lifecycle Status</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Growth Stage</span>
+                                <span class="text-white">45%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="bg-primary h-3 rounded-full" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Maturity Stage</span>
+                                <span class="text-white">35%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="bg-secondary h-3 rounded-full" style="width: 35%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Introduction Stage</span>
+                                <span class="text-white">15%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="bg-primary h-3 rounded-full" style="width: 15%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Decline Stage</span>
+                                <span class="text-white">5%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="bg-gray-500 h-3 rounded-full" style="width: 5%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Roadmap -->
+    <section id="roadmap" class="w-full py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Implementation Roadmap</h2>
+            
+            <div class="space-y-8">
+                <div class="roadmap-step">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">Q1</span>
+                        </div>
+                        <div class="strategy-card rounded-xl p-6 flex-1 card-hover">
+                            <h3 class="text-xl font-bold mb-4 text-primary">Market Research & Planning</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <h4 class="font-bold text-white mb-2">Key Activities</h4>
+                                    <ul class="text-gray-400 text-sm space-y-1">
+                                        <li>• Detailed market analysis</li>
+                                        <li>• Competitive intelligence</li>
+                                        <li>• Regulatory assessment</li>
+                                        <li>• Resource allocation</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-2">Deliverables</h4>
+                                    <ul class="text-gray-400 text-sm space-y-1">
+                                        <li>• Market entry strategy</li>
+                                        <li>• Budget allocation</li>
+                                        <li>• Team structure</li>
+                                        <li>• Timeline milestones</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roadmap-step">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">Q2</span>
+                        </div>
+                        <div class="strategy-card rounded-xl p-6 flex-1 card-hover">
+                            <h3 class="text-xl font-bold mb-4 text-secondary">Product Development & Compliance</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <h4 class="font-bold text-white mb-2">Key Activities</h4>
+                                    <ul class="text-gray-400 text-sm space-y-1">
+                                        <li>• Product adaptation</li>
+                                        <li>• Regulatory submissions</li>
+                                        <li>• Quality system updates</li>
+                                        <li>• Clinical data collection</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-2">Deliverables</h4>
+                                    <ul class="text-gray-400 text-sm space-y-1">
+                                        <li>• Regulatory approvals</li>
+                                        <li>• Product certifications</li>
+                                        <li>• Documentation updates</li>
+                                        <li>• Training materials</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roadmap-step">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">Q3</span>
+                        </div>
+                        <div class="strategy-card rounded-xl p-6 flex-1 card-hover">
+                            <h3 class="text-xl font-bold mb-4 text-primary">Partnership & Distribution</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <h4 class="font-bold text-white mb-2">Key Activities</h4>
+                                    <ul class="text-gray-400 text-sm space-y-1">
+                                        <li>• Partner identification</li>
+                                        <li>• Distribution agreements</li>
+                                        <li>• Supply chain setup</li>
+                                        <li>• Training programs</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-2">Deliverables</h4>
+                                    <ul class="text-gray-400 text-sm space-y-1">
+                                        <li>• Partnership contracts</li>
+                                        <li>• Distribution network</li>
+                                        <li>• Training curriculum</li>
+                                        <li>• Support systems</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roadmap-step">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">Q4</span>
+                        </div>
+                        <div class="strategy-card rounded-xl p-6 flex-1 card-hover">
+                            <h3 class="text-xl font-bold mb-4 text-secondary">Market Launch & Scaling</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <h4 class="font-bold text-white mb-2">Key Activities</h4>
+                                    <ul class="text-gray-400 text-sm space-y-1">
+                                        <li>• Product launch campaigns</li>
+                                        <li>• Customer acquisition</li>
+                                        <li>• Performance monitoring</li>
+                                        <li>• Continuous improvement</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-2">Deliverables</h4>
+                                    <ul class="text-gray-400 text-sm space-y-1">
+                                        <li>• Market presence</li>
+                                        <li>• Customer base</li>
+                                        <li>• Revenue targets</li>
+                                        <li>• Growth metrics</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="strategy-card rounded-xl p-6 text-center card-hover">
+                    <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-target-line text-2xl text-primary"></i>
+                    </div>
+                    <h4 class="font-bold text-white mb-2">Success Metrics</h4>
+                    <p class="text-gray-400 text-sm">KPI tracking and performance measurement</p>
+                </div>
+                <div class="strategy-card rounded-xl p-6 text-center card-hover">
+                    <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-shield-check-line text-2xl text-secondary"></i>
+                    </div>
+                    <h4 class="font-bold text-white mb-2">Risk Mitigation</h4>
+                    <p class="text-gray-400 text-sm">Proactive risk management and contingency planning</p>
+                </div>
+                <div class="strategy-card rounded-xl p-6 text-center card-hover">
+                    <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-refresh-line text-2xl text-primary"></i>
+                    </div>
+                    <h4 class="font-bold text-white mb-2">Continuous Review</h4>
+                    <p class="text-gray-400 text-sm">Regular assessment and strategy adjustment</p>
+                </div>
+                <div class="strategy-card rounded-xl p-6 text-center card-hover">
+                    <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-rocket-line text-2xl text-secondary"></i>
+                    </div>
+                    <h4 class="font-bold text-white mb-2">Scaling Plan</h4>
+                    <p class="text-gray-400 text-sm">Systematic expansion and growth optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KPIs & Performance Metrics -->
+    <section class="w-full py-16 px-6 bg-black/30">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">KPIs & Performance Metrics</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Financial Metrics</h3>
+                    <div class="space-y-6">
+                        <div class="text-center">
+                            <div class="w-24 h-24 kpi-gauge rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-2xl font-bold text-white">12%</span>
+                            </div>
+                            <p class="text-gray-400">Revenue Growth</p>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Market Share</span>
+                                <span class="text-white">18.5%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Profit Margin</span>
+                                <span class="text-white">22.3%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">ROI</span>
+                                <span class="text-white">28.7%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Operational KPIs</h3>
+                    <div class="space-y-6">
+                        <div class="text-center">
+                            <div class="w-24 h-24 kpi-gauge rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-2xl font-bold text-white">99.2%</span>
+                            </div>
+                            <p class="text-gray-400">Quality Rate</p>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Production Efficiency</span>
+                                <span class="text-white">94.8%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Delivery Performance</span>
+                                <span class="text-white">96.5%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Training Effectiveness</span>
+                                <span class="text-white">92.1%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Customer Metrics</h3>
+                    <div class="space-y-6">
+                        <div class="text-center">
+                            <div class="w-24 h-24 kpi-gauge rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-2xl font-bold text-white">89%</span>
+                            </div>
+                            <p class="text-gray-400">Retention Rate</p>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Satisfaction Score</span>
+                                <span class="text-white">4.7/5</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">NPS Score</span>
+                                <span class="text-white">72</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Market Penetration</span>
+                                <span class="text-white">34.2%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="strategy-card rounded-xl p-8 card-hover">
+                <h3 class="text-2xl font-bold mb-6 text-primary">Growth Indicators Dashboard</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-primary">£32M</span>
+                        </div>
+                        <h4 class="font-bold text-white mb-2">Annual Revenue</h4>
+                        <p class="text-gray-400 text-sm">+12% YoY growth</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-secondary">2,340</span>
+                        </div>
+                        <h4 class="font-bold text-white mb-2">Active Customers</h4>
+                        <p class="text-gray-400 text-sm">+8% customer base growth</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-primary">65</span>
+                        </div>
+                        <h4 class="font-bold text-white mb-2">Countries</h4>
+                        <p class="text-gray-400 text-sm">Global market presence</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-secondary">5,000+</span>
+                        </div>
+                        <h4 class="font-bold text-white mb-2">Products</h4>
+                        <p class="text-gray-400 text-sm">Comprehensive portfolio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Manager's Perspective -->
+    <section class="w-full py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Product Manager's Perspective</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Strategic Insights</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-bold text-white mb-2">Market Positioning</h4>
+                            <p class="text-gray-400 text-sm">Vi's unique position as a UK-based design leader with global reach through Henry Schein provides competitive advantage in quality perception and distribution efficiency.</p>
+                        </div>
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h4 class="font-bold text-white mb-2">Product Innovation</h4>
+                            <p class="text-gray-400 text-sm">Focus on minimally invasive surgical solutions and digital integration aligns with industry trends toward precision medicine and data-driven veterinary care.</p>
+                        </div>
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-bold text-white mb-2">Customer Value</h4>
+                            <p class="text-gray-400 text-sm">The combination of high-quality instruments with comprehensive training programs creates significant customer value and differentiation from competitors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Decision Framework</h3>
+                    <div class="space-y-6">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="ri-lightbulb-line text-2xl text-primary"></i>
+                            </div>
+                            <h4 class="font-bold text-white mb-2">Innovation Priority</h4>
+                            <p class="text-gray-400 text-sm">Prioritize R&D investments in high-growth segments</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="ri-focus-line text-2xl text-secondary"></i>
+                            </div>
+                            <h4 class="font-bold text-white mb-2">Market Focus</h4>
+                            <p class="text-gray-400 text-sm">Concentrate on markets with strong regulatory alignment</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="ri-team-line text-2xl text-primary"></i>
+                            </div>
+                            <h4 class="font-bold text-white mb-2">Resource Allocation</h4>
+                            <p class="text-gray-400 text-sm">Balance between growth investments and operational efficiency</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Priority Matrix</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">High Impact/High Effort</span>
+                            <span class="bg-red-600/20 text-red-400 px-2 py-1 rounded text-xs">Strategic</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">High Impact/Low Effort</span>
+                            <span class="bg-green-600/20 text-green-400 px-2 py-1 rounded text-xs">Quick Wins</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Low Impact/High Effort</span>
+                            <span class="bg-red-600/20 text-red-400 px-2 py-1 rounded text-xs">Avoid</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">Low Impact/Low Effort</span>
+                            <span class="bg-yellow-600/20 text-yellow-400 px-2 py-1 rounded text-xs">Fill-in</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Resource Optimization</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">R&D Investment</span>
+                                <span class="text-white">15%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 15%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Marketing & Sales</span>
+                                <span class="text-white">25%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-secondary h-2 rounded-full" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Operations</span>
+                                <span class="text-white">45%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-400">Training & Support</span>
+                                <span class="text-white">15%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-secondary h-2 rounded-full" style="width: 15%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-6 card-hover">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Quality Assurance</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-primary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">ISO 13485 compliance</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Continuous improvement</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-primary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Customer feedback integration</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Supplier quality management</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-primary rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Risk-based approach</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="w-full py-16 px-6 bg-black/30">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Conclusion</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Key Findings</h font-bold mb-6 text-primary">Key Findings</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-bold text-white mb-2">Market Leadership Position</h4>
+                            <p class="text-gray-400 text-sm">Vi has established a strong position in the UK veterinary surgical instruments market with 18.5% market share, supported by 90+ years of combined team expertise and comprehensive training programs.</p>
+                        </div>
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h4 class="font-bold text-white mb-2">Competitive Advantages</h4>
+                            <p class="text-gray-400 text-sm">UK-based design heritage, Henry Schein global distribution network, and CPD-certified training programs create sustainable competitive differentiation in quality and service delivery.</p>
+                        </div>
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-bold text-white mb-2">Growth Opportunities</h4>
+                            <p class="text-gray-400 text-sm">International expansion potential in 12 target markets, digital solution integration, and minimally invasive surgical instrument development represent significant growth vectors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Strategic Recommendations</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-primary text-xs font-bold">1</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Accelerate International Expansion</h4>
+                                <p class="text-gray-400 text-sm">Prioritize Tier 1 markets (Germany, France, USA) with direct investment and strategic partnerships</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-secondary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-secondary text-xs font-bold">2</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Enhance Digital Integration</h4>
+                                <p class="text-gray-400 text-sm">Develop IoT-enabled instruments and AI-assisted surgical solutions to maintain innovation leadership</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-primary text-xs font-bold">3</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Strengthen Training Programs</h4>
+                                <p class="text-gray-400 text-sm">Expand CPD offerings with virtual reality training and advanced simulation technologies</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="strategy-card rounded-xl p-6 text-center card-hover">
+                    <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-trophy-line text-2xl text-primary"></i>
+                    </div>
+                    <h4 class="font-bold text-white mb-2">Success Factors</h4>
+                    <p class="text-gray-400 text-sm">Quality focus, clinical expertise, and customer-centric approach</p>
+                </div>
+                <div class="strategy-card rounded-xl p-6 text-center card-hover">
+                    <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-alert-line text-2xl text-secondary"></i>
+                    </div>
+                    <h4 class="font-bold text-white mb-2">Risk Factors</h4>
+                    <p class="text-gray-400 text-sm">Regulatory changes, competitive pressure, and technology disruption</p>
+                </div>
+                <div class="strategy-card rounded-xl p-6 text-center card-hover">
+                    <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-list-check-line text-2xl text-primary"></i>
+                    </div>
+                    <h4 class="font-bold text-white mb-2">Prerequisites</h4>
+                    <p class="text-gray-400 text-sm">Adequate investment, skilled workforce, and regulatory compliance</p>
+                </div>
+                <div class="strategy-card rounded-xl p-6 text-center card-hover">
+                    <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-arrow-up-line text-2xl text-secondary"></i>
+                    </div>
+                    <h4 class="font-bold text-white mb-2">Growth Outlook</h4>
+                    <p class="text-gray-400 text-sm">25% revenue growth target over next 3 years</p>
+                </div>
+            </div>
+            <div class="strategy-card rounded-xl p-8 card-hover">
+                <h3 class="text-2xl font-bold mb-6 text-primary">Implementation Priorities</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-green-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-green-400">High</span>
+                        </div>
+                        <h4 class="font-bold text-white mb-3">Short-term (0-12 months)</h4>
+                        <div class="space-y-2 text-sm text-left">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                                <span class="text-gray-300">Complete regulatory compliance</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                                <span class="text-gray-300">Launch digital training platform</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                                <span class="text-gray-300">Establish German subsidiary</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-yellow-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-yellow-400">Med</span>
+                        </div>
+                        <h4 class="font-bold text-white mb-3">Medium-term (1-2 years)</h4>
+                        <div class="space-y-2 text-sm text-left">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                                <span class="text-gray-300">Expand to 5 new markets</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                                <span class="text-gray-300">Launch IoT instrument line</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                                <span class="text-gray-300">Develop partnership network</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-blue-400">Low</span>
+                        </div>
+                        <h4 class="font-bold text-white mb-3">Long-term (2-3 years)</h4>
+                        <div class="space-y-2 text-sm text-left">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                                <span class="text-gray-300">Global market leadership</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                                <span class="text-gray-300">AI-integrated solutions</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                                <span class="text-gray-300">Sustainability leadership</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <div class="strategy-card rounded-xl p-8 card-hover">
+                    <h3 class="text-2xl font-bold mb-4 text-primary">Future Outlook</h3>
+                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                        Veterinary Instrumentation (Vi) is well-positioned to capitalize on the growing global veterinary market through strategic expansion, innovative product development, and enhanced digital capabilities. The company's strong foundation in quality manufacturing, clinical expertise, and customer support provides a solid platform for sustainable growth and market leadership in the evolving veterinary surgical instruments sector.
+                    </p>
+                    <div class="flex justify-center space-x-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary">£50M</div>
+                            <div class="text-gray-400 text-sm">Target Revenue by 2027</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-secondary">12</div>
+                            <div class="text-gray-400 text-sm">New Markets</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary">25%</div>
+                            <div class="text-gray-400 text-sm">Market Share Goal</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll-based animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        // Observe all cards for animation
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Interactive chart initialization (placeholder for ECharts)
+        window.addEventListener('load', () => {
+            // Initialize charts here if needed
+            console.log('Vi Case Study loaded successfully');
+        });
+
+        // Add active navigation highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
